@@ -131,6 +131,7 @@ REDIS_URL="redis://redis:6379/0"
 ## 🧪 Run Tests
 
 ```bash
+npm install --save-dev jest @types/jest ts-jest
 npm run test
 npm run test:cov
 ```
