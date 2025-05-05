@@ -1,0 +1,58 @@
+export const ERROR_CODES = {
+  AUTH: {
+    UNAUTHORIZED: 'AUTH_UNAUTHORIZED',
+    INVALID_TOKEN: 'AUTH_INVALID_TOKEN',
+    FORBIDDEN: 'AUTH_FORBIDDEN',
+    SESSION_EXPIRED: 'AUTH_SESSION_EXPIRED', // Session has expired
+    INVALID_CREDENTIALS: 'AUTH_INVALID_CREDENTIALS', // Invalid credentials provided
+  },
+  USER: {
+    NOT_FOUND: 'USER_NOT_FOUND',
+    ALREADY_EXISTS: 'USER_ALREADY_EXISTS',
+    INVALID_CREDENTIALS: 'USER_INVALID_CREDENTIALS',
+    EMAIL_ALREADY_IN_USE: 'USER_EMAIL_ALREADY_IN_USE', // Email already registered
+    PHONE_ALREADY_IN_USE: 'USER_PHONE_ALREADY_IN_USE', // Phone number already registered
+    INACTIVE_USER: 'USER_INACTIVE', // User is inactive
+    ACCOUNT_LOCKED: 'USER_ACCOUNT_LOCKED', // User account is locked
+    NOT_A_PROVIDER: 'USER_NOT_A_PROVIDER',
+  },
+  SERVICE: {
+    PROVIDER_NOT_FOUND: 'SERVICE_PROVIDER_NOT_FOUND',
+    CATEGORY_NOT_FOUND: 'SERVICE_CATEGORY_NOT_FOUND',
+    UNAVAILABLE_SERVICE: 'SERVICE_UNAVAILABLE', // Service is not available
+    NO_CATEGORY_SELECTED: 'SERVICE_NO_CATEGORY_SELECTED',
+  },
+  GENERAL: {
+    UNKNOWN_ERROR: 'UNKNOWN_ERROR',
+    BAD_REQUEST: 'BAD_REQUEST',
+    INTERNAL_SERVER_ERROR: 'GENERAL_INTERNAL_SERVER_ERROR', // Generic internal server error
+    NOT_IMPLEMENTED: 'GENERAL_NOT_IMPLEMENTED', // Feature not implemented
+    TIMEOUT: 'GENERAL_TIMEOUT', // Request timed out
+  },
+  VALIDATION: {
+    INVALID_TYPE: 'VALIDATION_INVALID_TYPE',
+    REQUIRED_FIELD_MISSING: 'VALIDATION_REQUIRED_FIELD_MISSING', // Required field is missing
+    INVALID_FORMAT: 'VALIDATION_INVALID_FORMAT', // Invalid format of the provided data
+    TOO_SHORT: 'VALIDATION_TOO_SHORT', // Input is too short
+    TOO_LONG: 'VALIDATION_TOO_LONG', // Input is too long
+  },
+  FILE: {
+    UPLOAD_FAILED: 'FILE_UPLOAD_FAILED', // File upload failed
+    FILE_TOO_LARGE: 'FILE_TOO_LARGE', // File size exceeds the allowed limit
+    UNSUPPORTED_FILE_TYPE: 'FILE_UNSUPPORTED_TYPE', // Unsupported file type
+    FILE_NOT_FOUND: 'FILE_NOT_FOUND', // File not found
+  },
+  PERMISSION: {
+    ACCESS_DENIED: 'PERMISSION_ACCESS_DENIED', // Access denied for the current operation
+    FORBIDDEN_ACTION: 'PERMISSION_FORBIDDEN_ACTION', // Forbidden action on the resource
+  },
+  DATABASE: {
+    CONNECTION_FAILED: 'DATABASE_CONNECTION_FAILED', // Database connection failed
+    QUERY_ERROR: 'DATABASE_QUERY_ERROR', // Error executing database query
+    DUPLICATE_ENTRY: 'DATABASE_DUPLICATE_ENTRY', // Duplicate entry error
+  },
+  TODO: {
+    LIST_NOT_FOUND: 'TODO_LIST_NOT_FOUND',
+    TITLE_ALREADY_EXISTS: 'TODO_TITLE_ALREADY_EXISTS',
+  },
+};
